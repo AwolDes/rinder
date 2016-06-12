@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/austin/Websites/products/rinder/www/lib/ionic-ion-tinder-cards/example/www/lib/js/angular/angular-sanitize.min.js",
+        "/home/austin/Websites/products/rinder/www/lib/ionic-ion-tinder-cards/example/www/lib/js/angular/angular-animate.js",
+        "/home/austin/Websites/products/rinder/www/views/settings/settings.js",
+        "/home/austin/Websites/products/rinder/www/views/invite/invite.js",
+        "/home/austin/Websites/products/rinder/www/views/signup/signup.js",
+        "/home/austin/Websites/products/rinder/www/js/controllers.js"
+    ]
+}

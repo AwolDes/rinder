@@ -1,0 +1,58 @@
+.customLogin{
+    color:black;
+    margin-left:48%;
+    font-size: 17px !important;
+    border-radius: 5px;
+    //background-color: #FF6B6B !important;
+    padding:12px;
+    margin-top:20px;
+    text-decoration: underline;
+}
+
+.uniq:hover{
+    background-color: #E56060;
+}
+
+h4{
+    color:white !important;
+}
+
+.form{
+    margin-top:50px;
+}
+
+.item-input{
+    padding:0px; !important;
+}
+
+@media screen and (max-width: 768px){
+    
+    .customLogin{
+        margin-left:45%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .customLogin{
+        margin-left:42%;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    
+    .customLogin{
+        margin-left:40%;
+    }
+    
+}
+
+@media screen and (max-width: 325px){
+    
+    .customLogin{
+        margin-left:38%;
+    }
+    
+}

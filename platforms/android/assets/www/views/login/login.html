@@ -1,0 +1,31 @@
+<ion-view view-title="Login" hide-nav-bar="true">
+  <ion-header-bar>
+   
+    <h2 class="title" >Login</h2>
+    <div class="buttons">
+      
+    </div>
+  </ion-header-bar>
+  <ion-content>
+   <h4 style="text-align:center; margin-top:15px;" ng-hide = "notLogged">Log into Rinder</h4>
+    <form class="form">
+      <div class="list login">
+        <label class="item item-input" ng-hide = "notLogged">
+          <span class="input-label">Email</span>
+          <input type="text" class="custom-input" ng-model="userEmail.value">
+        </label>
+        <label class="item item-input" ng-hide = "notLogged">
+          <span class="input-label">Password</span>
+          <input type="password" class="custom-input" ng-model="userPassword.value">
+        </label>
+        <label class="item" ng-hide = "notLogged">
+            <p style="text-align:center;">{{failedLogin.value}}</p>
+          <button class="button button-block button-positive" type="submit" ng-click="login()">Login!</button>
+        </label>
+        
+        <label class="item uniq" ng-click="goToSignup()" ><a class="customLogin"  ng-hide = "notLogged">Signup</a></label>
+      </div>
+    </form>
+    
+  </ion-content>
+</ion-view>

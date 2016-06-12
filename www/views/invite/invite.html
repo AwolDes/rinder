@@ -1,0 +1,9 @@
+<ion-view view-title="Favourites">
+      <ion-content class="padding">
+        <h1 class="state-title">Your favourite recipes</h1>
+        <div ng-repeat="favourite in favourites" class="links recipe-card">
+           <img ng-src="{{favourite.image}}" class="fave-img image">
+            <a class="favourite" href="#" ng-click="openLink(favourite.url)">{{favourite.title}}</a>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view view-title="Rinder">
+  <!--<ion-nav-title>
+    <div class="padding">
+      <img height="30px" src="img/logo.png">
+    </div>
+    </ion-nav-title>-->
+    
+<ion-pane ng-controller="CardsCtrl">
+ 
+  <td-cards>
+    <td-card id="td-card" ng-repeat="card in cards" on-destroy="cardDestroyed($index)"
+          on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-transition-left="transitionLeft($index)"
+on-transition-right="transitionRight($index)"
+          on-partial-swipe="cardPartialSwipe(amt)">
+
+              <div class="image">
+                <div class="yes-text overlayBox"><div class="yesBox boxed" id="centerMe">Yes</div></div>
+                  <div class="no-text overlayBox"><div class="noBox boxed">No</div></div>
+                  <img ng-src="{{card.image_url}}">
+                  
+                <div class="username"><i class="icon ion-android-contact"></i> {{card.title}}</div>
+              </div>
+              
+            <div class="ctrl-buttons">
+                <button ng-click="yesCard($index)" class="button yes">Yes</button>
+                <button ng-click="noCard($index)" class="button no">No</button>
+            </div>
+    </td-card>
+  </td-cards>
+  <button class="moreBtn" ng-show="moreBtn" ng-click="newCards()">More?</button>
+</ion-pane>
+</ion-view>
